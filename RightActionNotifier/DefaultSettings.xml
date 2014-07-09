@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<notificationSettings>
+  <!-- interval and showUpTime are given in milliseconds in the file-->
+  <interval>4000</interval>
+  <showUptime>3000</showUptime>
+  <randomShow>false</randomShow>
+  <limitRunningTime from="10:00 AM" until="17:00 PM">false</limitRunningTime>
+  <notifications>
+   <!-- <notification>Husk å kjøpe brød</notification>
+    <notification>Stopp ved bilbutikken</notification>
+   -->
+    <notification>Everyday in everyway I am getting better and better</notification>
+    <notification>I am worthy</notification>
+    <notification>Imporvements are taking place in my life right now</notification>
+    <notification>Why am I so worthy?</notification>
+    <notification>Nobody on earth is like me</notification>
+    <notification>Improvements will continue to take place into the future</notification>
+    <notification>Why am I so successful?</notification>
+    <notification>Improvements will happen in all areas of my life</notification>
+    <notification>My image of myself is getting better and better</notification>
+    <notification>The David you are scoped in is you</notification>
+    <notification>The universe loves speed. Do not delay! do not doubt! Act!</notification>
+    <notification>My results are getting better and better</notification>
+    <notification>Why are all the riches of the univrse coming to me?</notification>
+    <notification>I love you, Please forgive me, I am sorry, Thank you</notification>    
+   
+  </notifications>
+</notificationSettings>

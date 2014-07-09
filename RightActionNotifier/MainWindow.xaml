@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:RightActionNotifier" x:Class="RightActionNotifier.MainWindow"
+        Title="Right Action Notifier - http://rightaction.eu" Height="547.75" Width="699.4" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="83*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="SaveBtn" Content="Save all changes" HorizontalAlignment="Left" Margin="495,376,0,0" VerticalAlignment="Top" Width="188" Click="SaveBtn_Click" Grid.Row="1" Height="19"/>
+        <Label Content="Interval (s)" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Width="71" Height="26"/>
+        <TextBox x:Name="txtInterval" HorizontalAlignment="Left" Height="23" Margin="109,10,0,0" TextWrapping="Wrap" Text="120" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.297,0.078" ToolTip="Enter number of seconds you wish between two affrimations"/>
+        <Label Content="Screen time (s)" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="94" Height="26"/>
+        <TextBox x:Name="txtShowUpTime" HorizontalAlignment="Left" Height="23" Margin="109,38,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.297,0.009" ToolTip="Number of seconds affrimation will stay on the screen"/>
+        <CheckBox x:Name="chkShowRandomly" Content=" Random show" HorizontalAlignment="Left" Margin="218,14,0,0" VerticalAlignment="Top" Height="16" Width="99"/>
+        <CheckBox x:Name="chkLimitRunningTime" Content="Limit running time" HorizontalAlignment="Left" Margin="218,42,0,0" VerticalAlignment="Top" Width="118" Height="14"/>
+        <TextBox x:Name="timeFrom" HorizontalAlignment="Left" Height="23" Margin="357,38,0,0" TextWrapping="Wrap" Text="10:00 AM" VerticalAlignment="Top" Width="80" ToolTip="From hour and minute hh:mm (like 10:00) "/>
+        <TextBox x:Name="timeTo" HorizontalAlignment="Left" Height="23" Margin="495,38,0,0" TextWrapping="Wrap" Text="20:00 PM" VerticalAlignment="Top" Width="75" ToolTip="To hour and minute hh:mm like (20:00 PM)" RenderTransformOrigin="1.356,0.435"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="455,35,0,0" VerticalAlignment="Top" Height="26" Width="14"/>
+        <ListView x:Name="lvnotifications" HorizontalAlignment="Left" Height="374" Margin="10,77,0,0" VerticalAlignment="Top" Width="673" Grid.RowSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="notification" Width="673" DisplayMemberBinding="{Binding notificationString}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="New notification" HorizontalAlignment="Left" Margin="10,340,0,0" Grid.Row="1" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="txtNewnotification" HorizontalAlignment="Left" Height="23" Margin="118,340,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Enter a new notification here" VerticalAlignment="Top" Width="471"/>
+        <Button x:Name="btnAddToList" Content="Add to list" HorizontalAlignment="Left" Margin="594,342,0,0" Grid.Row="1" VerticalAlignment="Top" Width="92" Click="btnAddToList_Click"/>
+        <Button x:Name="btnRestoreDefault" Content="Restore default" HorizontalAlignment="Left" Margin="323,376,0,0" Grid.Row="1" VerticalAlignment="Top" Width="144" Click="btnRestoreDefault_Click"/>
+        <Button x:Name="btnRemoveSelected" Content="Remove selected item" HorizontalAlignment="Left" Margin="73,376,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" Click="btnRemoveSelected_Click"/>
+
+    </Grid>
+
+
+</Window>
